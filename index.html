@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- Use DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- Use fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Customize config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: 'rgb(171, 239, 95)',
+                secondary: 'rgba(171, 239, 95, 0.5)',
+              },
+              fontFamily:{
+                manrope: "Manrope" ,
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+         .font-manrope{
+            font-family: "Manrope", sans-serif;
+         }
+      </style>
+</head>
+<body class="font-manrope ">
+    <!-- Header Section -->
+     <header class="container w-11/12 mx-auto bg-gradient-to-t from-[rgb(255, 255, 255)] to-[rgba(255, 255, 255, 0)]">
+        <nav class="">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                   
+                    <div class="m-3 flex h-9 w-12 bg-primary rounded-full text-center justify-center md:h-8 md:mr-2">
+                        <i class="fa-solid fa-arrow-right     
+                         text-white text-2xl  -rotate-45"></i>
+                      </div>
+                   
+                  <a class=" text-4xl font-extrabold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg">
+                    <li><a class="font-bold" href="">Home</a></li>
+                    <li><a class="text-gray-500" href="">Services</a></li>
+                    <li><a class="text-gray-500" href="">Portfolio</a><li>
+                    <li><a class="text-gray-500" href="">Blogs</a></li>
+                    <li><a class="text-gray-500" href="">Contact Us</a></li>
+                  </ul> 
+                </div>
+                <div class="navbar-end">
+                    <div class="flex w-36 justify-around hidden lg:flex">
+                        <button class="w-12 h-12 bg-gray-50 rounded-full">
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                        </button>
+                        <button class="w-12 h-12 bg-gray-50 rounded-full" >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                    
+                  <a class="btn w-52 font-extrabold bg-primary rounded-3xl text-xl hidden lg:flex">Book Consult
+                    <i class="fa-solid fa-arrow-right w-8 h-8  text-center items-center bg-black text-white rounded-full text-2xl -rotate-45"></i>
+                  </a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
+                      <li><a class="font-bold" href="">Home</a></li>
+                  <li><a class="text-gray-500" href="">Services</a></li>
+                  <li><a class="text-gray-500" href="">Portfolio</a><li>
+                  <li><a class="text-gray-500" href="">Blogs</a></li>
+                  <li><a class="text-gray-500" href="">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+
+        <!-- hero section -->
+
+       
+
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center grid grid-cols-1">
+
+                <div class=" mx-auto">
+                    <img src="./assets/banner.png" alt="">
+                </div>
+
+              <div class="">
+                <h1 class="text-3xl lg:text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 text-sm lg:text-base text-gray-500">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn w-52 font-extrabold bg-secondary rounded-3xl text-xl ">View Details
+                    <i class="fa-solid fa-arrow-right w-8 h-8  text-center items-center bg-primary text-white rounded-full text-2xl -rotate-45"></i>
+                  </button>
+              </div>
+            </div>
+          </div>
+     </header>
+
+     <!-- main section -->
+      <main></main>
+
+      <!-- Footer Section -->
+       <footer></footer>
+
+</body>
+</html>
